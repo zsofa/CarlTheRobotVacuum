@@ -1,8 +1,6 @@
 package interfaces;
 
-public interface Activity {
-
-    //void turnLeft();
+public interface API {
 
     void turnRight();
 
