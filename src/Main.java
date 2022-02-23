@@ -1,9 +1,9 @@
-import services.CleaningProcess;
+import services.Cleaning;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        CleaningProcess cleaningProcess = new CleaningProcess();
-        cleaningProcess.run();
+        Cleaning cleaning = new Cleaning();
+        cleaning.run();
 
 
 

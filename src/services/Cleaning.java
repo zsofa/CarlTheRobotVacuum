@@ -5,18 +5,12 @@ import interfaces.API;
 import java.util.HashSet;
 import java.util.Set;
 
-public class CleaningProcess implements API {
+public class Cleaning implements API {
 
 
     private Set<int[]> visited = new HashSet<>();
 
-    public void moveBack() {
-        turnRight();
-        turnRight();
-        move();
-        turnRight();
-        turnRight();
-    }
+
 
     public void findTheWay(int currX, int currY, int currDirection) {
 
@@ -49,6 +43,14 @@ public class CleaningProcess implements API {
         }
     }
 
+    public void moveBack() {
+        turnRight();
+        turnRight();
+        move();
+        turnRight();
+        turnRight();
+    }
+
     public void run() throws Exception{
         try {
             findTheWay(0,0,0);
@@ -59,7 +61,6 @@ public class CleaningProcess implements API {
 
     }
 
-
     @Override
     public void turnRight() {
 
@@ -67,12 +68,12 @@ public class CleaningProcess implements API {
 
     @Override
     public void cleanTheSpot() {
+
     }
 
     @Override
     public boolean move() {
         return false;
     }
-
 
 }
