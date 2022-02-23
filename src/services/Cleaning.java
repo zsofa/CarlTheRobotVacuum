@@ -1,11 +1,11 @@
 package services;
 
-import interfaces.API;
+import interfaces.Activities;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class Cleaning implements API {
+public class Cleaning implements Activities {
 
 
     private Set<int[]> visited = new HashSet<>();
